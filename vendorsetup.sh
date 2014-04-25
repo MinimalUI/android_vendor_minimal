@@ -1,0 +1,5 @@
+add_lunch_combo minimal_emulator-eng
+add_lunch_combo minimal_grouper-eng
+add_lunch_combo minimal_hammerhead-user
+add_lunch_combo minimal_mako-user
+add_lunch_combo minimal_manta-user
