@@ -13,6 +13,24 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.android.dateformat=MM-dd-yyyy \
     ro.com.android.dataroaming=false
 
+# Tweaks for build.prop
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.hw_quickpoweron=true \
+    ro.config.hw_fast_dormancy=1 \
+    persist.adb.notify=0 \
+    profiler.force_disable_err_rpt=1 \
+    profiler.force_disable_ulog=1 \
+    ro.ril.hep=0 \
+    ro.ril.hsxpa=2 \
+    ro.ril.gprsclass=12 \
+    ro.ril.enable.dtm=1 \
+    ro.ril.hsdpa.category=8 \
+    ro.ril.enable.a53=1 \
+    ro.ril.enable.3g.prefix=1 \
+    ro.ril.htcmaskw1.bitmask=4294967295 \
+    ro.ril.htcmaskw1=14449 \
+    ro.ril.hsupa.category=6
+
 # Launcher3 supported devices
 ifneq ($(filter minimal_mako minimal_hammerhead,$(TARGET_PRODUCT)),)
 PRODUCT_PACKAGES += \
