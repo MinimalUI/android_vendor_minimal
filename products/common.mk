@@ -1,3 +1,5 @@
+-include vendor/rascarlo/products/bootanimations.mk
+
 # Generic product
 PRODUCT_NAME := MinimalUI
 PRODUCT_BRAND := MinimalUI
@@ -32,7 +34,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.hsupa.category=6
 
 # Launcher3 supported devices
-ifneq ($(filter minimal_mako minimal_hammerhead,$(TARGET_PRODUCT)),)
+ifneq ($(filter mako hammerhead,$(TARGET_PRODUCT)),)
 PRODUCT_PACKAGES += \
     Launcher3
 # Auto-rotate
@@ -41,7 +43,7 @@ PRODUCT_PACKAGE_OVERLAYS += \
 endif
 
 # STK: overlay common to all devices with telephony
-ifneq ($(filter minimal_mako minimal_hammerhead,$(TARGET_PRODUCT)),)
+ifneq ($(filter mako hammerhead,$(TARGET_PRODUCT)),)
 # Build SimToolKit
 PRODUCT_PACKAGES += \
     Stk
