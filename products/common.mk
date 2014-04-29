@@ -1,5 +1,3 @@
--include vendor/rascarlo/products/bootanimations.mk
-
 # Generic product
 PRODUCT_NAME := MinimalUI
 PRODUCT_BRAND := MinimalUI
