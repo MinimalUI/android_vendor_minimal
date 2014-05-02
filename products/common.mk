@@ -3,6 +3,12 @@ PRODUCT_NAME := MinimalUI
 PRODUCT_BRAND := MinimalUI
 PRODUCT_DEVICE := generic
 
+# ROOT
+PRODUCT_COPY_FILES += \
+    vendor/rascarlo/proprietary/common/bin/su:system/xbin/su \
+    vendor/rascarlo/proprietary/common/etc/init.d/99SuperSUDaemon:system/etc/init.d/99SuperSUDaemon \
+    vendor/rascarlo/proprietary/common/apk/Superuser.apk:system/app/Superuser.apk
+
 PRODUCT_PROPERTY_OVERRIDES += \
     keyguard.no_require_sim=true \
     ro.url.legal=http://www.google.com/intl/%s/mobile/android/basic/phone-legal.html \
