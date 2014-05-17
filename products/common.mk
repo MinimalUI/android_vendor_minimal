@@ -50,6 +50,10 @@ endif
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/rascarlo/overlay/common
 
+#Theme Engine
+-include vendor/rascarlo/config/themes_common.mk
+
+
 # Latin IME lib
 PRODUCT_COPY_FILES += \
     vendor/rascarlo/proprietary/common/system/lib/libjni_latinime.so:system/lib/libjni_latinime.so
